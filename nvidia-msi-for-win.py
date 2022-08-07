@@ -15,7 +15,7 @@ from PyQt5.Qt import QApplication
 
 # nvidia-smi获取
 def get_cuda_status():
-    cmd = "nvidia-smi"
+    cmd = "nvidia-smi" # 自定义命令，这里以nvidi-smi为例
     ps = subprocess.Popen(cmd, stdin=subprocess.PIPE, stdout=subprocess.PIPE, shell=True)
     res = ''
     while True:
